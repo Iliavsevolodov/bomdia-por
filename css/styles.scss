@@ -1,0 +1,763 @@
+$purple: #A82682;
+$dark: #282828;
+$light: #606060;
+$white: #fff;
+
+html{
+    overflow-x: hidden;
+}
+
+body{
+    color: $light;
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+}
+
+.container{
+    width: 1298px;
+    margin: 0 auto; 
+}
+
+img{
+    display: block;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    padding: 100px 0;
+}
+
+.text{
+    font-size: 18px;
+    line-height: 26px;
+    color: $light;
+}
+
+.btn-solid{
+   padding: 18px 62px;
+   background-color: $purple;
+   color: $white;
+   font-size: 18px;
+   border-radius: 12px;
+   transition: all .5s ease-in-out;
+   border: 2px solid $purple;
+   display: inline-block;
+   font-weight: 700;
+   &:hover{
+       box-shadow: 0px 4px 16px 3px rgba(151, 22, 113, 0.25);
+   } 
+}
+
+.btn-stroke{
+    padding: 18px 48px;
+    border: 2px solid $purple;
+    border-radius: 12px;
+    font-size: 18px;
+    color: $dark;
+    font-weight: 700;
+    transition: all .5s ease-in-out;
+    display: inline-block;
+    &:hover{
+        background-color: $purple;
+        color: $white;
+    }
+}
+
+.section__title{
+    font-size: 48px;
+    line-height: 55px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $dark;
+    margin-bottom: 40px;
+}
+
+.header{
+    background-color: transparent;
+    padding: 30px 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__nav{
+            display: flex;
+            & a{
+                color: $white;
+                transition: all .5s ease-in-out;
+                font-weight: 600;
+                &:not(:last-child){
+                    margin-right: 40px;
+                }
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+    &__contacts{
+        display: flex;
+        align-items: center;
+        & a{
+            &:first-child{
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+.offer{
+    background: linear-gradient(196.48deg, #FF5400 -2.37%, #F7FC00 66.48%, #FAFF00 108.76%);
+    padding-top: 200px;
+    padding-bottom: 170px;
+    &__content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        font-family: 'Yanone Kaffeesatz';
+        font-size: 121px;
+        line-height: 98px;
+        color: $dark;
+        text-transform: uppercase;
+        line-height: 68px;
+        margin-bottom: 30px;
+        &::after{
+            content: url(/img/bomdia-svg.svg);
+            margin-left: 20px;
+        }
+    }
+    &__description{
+        margin-bottom: 40px;
+        width: 600px;
+        color: $dark;
+    }
+    &__btns{
+        display: flex;
+        margin-bottom: 100px;
+        & a{
+            &:first-child{
+                margin-right: 10px;
+            }
+        }
+    }
+    &__tastes{
+        max-width: 392px;
+        display: flex;
+        justify-content: space-between;
+        &__title{
+            font-size: 18px;
+            color: $light;
+            font-weight: 700;
+            margin-right: 24px;
+        }
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+            width: 140px;
+            margin-bottom: 20px;
+            & img{
+                margin-right: 8px;
+            }
+            & p{
+                font-size: 15px;
+            }
+        }
+    }
+    &__img{
+        animation: coffee 3s infinite ease-in-out;
+    }
+}
+
+.advantages{
+    margin-top: -100px;
+    padding-top: 0;
+    padding-bottom: 0;
+    &__list{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        text-align: center;
+        padding: 34px 24px 50px 24px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        border-radius: 24px;
+        width: 28%;
+        display: flex;
+        flex-direction: column;
+    }
+    &__title{
+        font-size: 24px;
+        font-weight: 700;
+        color: $dark;
+        margin-bottom: 20px;
+    }
+    &__img{
+        align-self: center;
+        margin-bottom: 40px;
+    }
+}
+
+.production{
+    &__content{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__description{
+        width: 500px;
+    }
+}
+
+.products{
+    padding-bottom: 0;
+    background-color: #fafafa;
+}
+
+.products .section__title{
+    padding-bottom: 40px;
+    margin-bottom: 0;
+}
+
+.coffee1{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background-color: #fafafa;
+}
+
+.coffee2{
+    padding-top: 60px;
+    background-color: $white;
+}
+
+.coffee__item{
+    display: flex;
+    &__img{
+        margin-right: 50px;
+        & img{
+            border-radius: 12px;
+        }
+    }
+    &__title{
+        font-size: 36px;
+        line-height: 28px;  
+        color: $dark;
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
+    &__description{
+        margin-bottom: 50px;
+        width: 600px;
+    }
+}
+
+.wildberries{
+    background: linear-gradient(160.55deg, #FAFF00 2.36%, #F7FC00 41.6%, #FF5400 106.74%);
+    position: relative;
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__img{
+        position: absolute;
+        right: 20%;
+        animation: coffee 3s infinite ease-in-out;
+    }
+}
+
+.wildberries .section__title{
+    width: 646px;
+}
+
+.reviews{
+    background-color: #fafafa;
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+    &__item{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        padding: 30px 70px 30px 30px;
+        border-radius: 24px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+    &__text{
+        width: 100%;
+        margin-left: 30px;
+    }
+    &__description{
+        margin-bottom: 16px;
+    }
+    &__name{
+        text-align: right;
+    }
+    &__img img{
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        display: block;
+    }
+}
+
+.opt{
+    background-image: url(/img/bg-opt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__description{
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    &__text{
+        width: 692px;
+        margin-bottom: 30px;
+    }
+}
+
+.footer{
+    padding: 60px 0;
+    background-color: #030F07;
+    &__menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__nav{
+            display: flex;
+            & a{
+                margin-right: 40px;
+                color: $white;
+            }
+        }
+    }
+    &__contacts{
+        display: flex;
+        & a{
+            &:first-child{
+                margin-right: 16px;
+            }
+        }
+    }
+}
+
+
+@keyframes coffee {
+    from {
+      transform: translate(0);
+    }
+  
+    50% {
+      transform: translate(0, -20px);
+    }
+  
+    to {
+      transform: translate(0);
+    }
+  }
+
+
+  
+@media screen and (max-width: 1320px) {
+    .container {
+      width: 1200px;
+    }
+
+    .wildberries__img{
+        right: -100px;
+    }
+
+    .opt{
+        background-position: 60% center;
+    }
+}
+
+  @media screen and (max-width: 1200px) {
+    .container {
+      width: 992px;
+    }
+
+    .production__description {
+        width: 450px;
+    }
+
+    .production__img{
+        width: 45%;
+    }
+
+    .wildberries__img {
+        right: -180px;
+    }
+
+    .reviews__item {
+        width: 38%;
+    }
+
+    .opt .section__title{
+        width: 60%;
+    }
+
+    .opt {
+        background-position: 70% center;
+    }
+
+    .coffee__item__description{
+        width: 450px;
+    }
+}
+
+  @media screen and (max-width: 992px) {
+    .container {
+      width: 768px;
+    }
+
+    .wildberries__img {
+        right: -280px;
+        bottom: 0;
+    }
+
+    .wildberries__img img{
+        width: 50%;
+    }
+
+    .offer__content{
+        flex-direction: column;
+        margin-top: 120px;
+    }
+
+    .offer__title {
+        width: 92%;
+    }
+
+    .offer__img{
+        margin-top: 50px;
+    }
+
+    .advantages__list{
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .advantages__item{
+        width: 80%;
+        margin: 0 auto;
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+
+    .production__content{
+        flex-direction: column;
+    }
+
+    .production__text{
+        margin-bottom: 40px;
+    }
+
+    .production__description{
+        width: 100%;
+    }
+
+    .production__img{
+        width: 100%;
+    }
+
+    .production__img img{
+        width: 100%;
+    }
+
+    .slider__img img{
+        width: 100%;
+    }
+
+    .reviews__item {
+        width: 100%;
+    }
+
+    .opt .section__title {
+        width: 80%;
+    }
+
+    .opt {
+        background-size: contain;
+        background-position: 0 100%;
+    }
+}
+
+  @media screen and (max-width: 768px) {
+    .container {
+      width: 576px;
+    }
+
+    .header__menu__nav{
+        display: none;
+    }
+
+    .offer__content{
+        margin-top: 80px;
+    }
+
+    .offer__title {
+        font-size: 112px;
+    }
+
+    .coffee__item{
+        flex-direction: column;
+    }
+
+    .coffee__item__text{
+        margin-top: 30px;
+    }
+
+    .coffee__item__description{
+        width: 100%;
+    }
+
+    .opt .section__title{
+        width: 100%;
+    }
+
+    .opt__description{
+        line-height: 32px;
+        width: 330px;
+    }
+
+    .opt__text{
+        width: 100%;
+    }
+
+    .footer__logo{
+        margin-bottom: 30px;
+    }
+
+    .footer__menu__nav{
+        flex-direction: column;
+        margin-bottom: 40px;
+        & a{
+            &:not(:last-child){
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    section{
+        padding: 60px 0;
+    }
+    
+    .section__title {
+        font-size: 38px;
+        line-height: 37px;
+    }
+
+    .wildberries__img {
+        display: none;
+    }
+
+    .wildberries .section__title{
+        width: 100%;
+    }
+    
+}
+
+  @media screen and (max-width: 576px) {
+    .container {
+      width: 480px;
+    }
+
+    .wildberries__img {
+        right: -400px;
+    }
+
+    .wildberries__img img{
+        width: 30%;
+    }
+
+    .text{
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .offer__img img{
+        width: 100%;
+    }
+
+    .offer__text{
+        width: 100%;
+    }
+
+    .offer__title{
+        font-size: 118px;
+        line-height: 86px;
+        display: block;
+    }
+
+    .offer__description{
+        width: 100%;
+    }
+
+    .offer__btns{
+        margin-bottom: 50px;
+    }
+
+    .section__title {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .reviews__item{
+        padding: 30px 30px 40px 20px;
+    }
+
+    .footer__menu{
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer__logo {
+        margin-bottom: 50px;
+    }
+
+    .footer__menu__nav{
+        margin-bottom: 50px;
+    }
+
+    section{
+        padding: 76px 0;
+    }
+
+}
+
+  @media screen and (min-width: 320px) and (max-width: 480px) {
+    .container {
+        width: auto;
+      padding: 0 20px;
+    }
+
+    .wildberries__img {
+        display: none;
+    }
+
+    .header{
+        padding: 12px 0;
+    }
+
+    .offer{
+        padding-top: 130px;
+    }
+
+    section{
+        padding: 60px 0;
+    }
+
+    .section__title{
+        font-size: 32px;
+        line-height: 38px;
+    }
+
+    .header__logo{
+        & a{
+            & img{
+                display: block;
+                width: 30%;
+                padding: 10px 16px;
+                background-color: $white;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    .offer__content {
+        margin-top: 0;
+    }
+
+    .offer__title {
+        font-size: 70px;
+        line-height: 60px;
+    }
+
+    .offer__title::after {  
+        margin-left: -10px;
+    }
+
+    .text{
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .btn-solid{
+        font-size: 16px;
+    }
+
+    .offer__tastes__title {
+        font-size: 12px;
+    }
+
+    .offer__tastes__item p {
+        font-size: 10px;
+    }
+
+    .offer__tastes__item img {
+        width: 35%;
+    }
+
+    .header__contacts{
+        & a{
+            & img{
+                width: 80%;
+            }
+        }
+    }
+
+    .header__contacts a:first-child {
+        margin-right: 6px;
+    }
+
+    .reviews__item{
+        flex-direction: column;
+    }
+
+    .reviews__text{
+        margin-left: 0;
+    }
+
+    .reviews__img{
+        margin-bottom: 20px;
+    }
+
+    .reviews__name{
+        font-size: 12px;
+    }
+
+    .coffee__item__title{
+        font-size: 28px;
+    }
+
+    .opt .section__title{
+        font-size: 28px;
+    }
+
+    .opt__description{
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
